@@ -50,3 +50,8 @@ vcpkg/
 
 # Ignore local cache used by e.g. clangd
 .cache/
+
+
+#ignore old_scratch and old_src
+old_scratch/
+old_src/
