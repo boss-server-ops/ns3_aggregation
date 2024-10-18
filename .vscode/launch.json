@@ -8,8 +8,12 @@
             "name": "(gdb) Launch from scratch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/${relativeFileDirname}/ns3-dev-${fileBasenameNoExtension}-${input:buildType}",
-            "args": [],
+            "program": "${workspaceFolder}/build/${relativeFileDirname}/ns3.42-${fileBasenameNoExtension}-${input:buildType}",
+            // 
+            "args": [
+                "--arg1='h'",
+                "--arg2='k'"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "Build",
@@ -33,7 +37,7 @@
             "name": "(lldb) Launch from scratch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/${relativeFileDirname}/ns3-dev-${fileBasenameNoExtension}-${input:buildType}",
+            "program": "${workspaceFolder}/build/${relativeFileDirname}/ns3.42-${fileBasenameNoExtension}-${input:buildType}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -51,7 +55,7 @@
             "name": "(gdb) Launch testrunner",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/utils/ns3-dev-test-runner-${input:buildType}",
+            "program": "${workspaceFolder}/build/utils/ns3.42-test-runner-${input:buildType}",
             "args": [
                 "--suite=${selectedText}"
             ],
@@ -78,7 +82,7 @@
             "name": "(lldb) Launch testrunner",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/utils/ns3-dev-test-runner-${input:buildType}",
+            "program": "${workspaceFolder}/build/utils/ns3.42-test-runner-${input:buildType}",
             "args": [
                 "--suite=${selectedText}"
             ],
