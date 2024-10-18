@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "../../../build/lib/libns3-dev-uan-test-debug.pdb"
+  "../../../build/lib/libns3-dev-uan-test-debug.so"
+  "CMakeFiles/uan-test.dir/test/uan-energy-model-test.cc.o"
+  "CMakeFiles/uan-test.dir/test/uan-energy-model-test.cc.o.d"
+  "CMakeFiles/uan-test.dir/test/uan-test.cc.o"
+  "CMakeFiles/uan-test.dir/test/uan-test.cc.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/uan-test.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
